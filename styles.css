@@ -1,0 +1,43 @@
+h1{
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #004200;
+}
+
+header h2{
+    text-align: center;
+    line-height: .25;
+} 
+ 
+ .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+#Trail_Projects{
+    color: #008000;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder  
+    }
+
+ul h3{
+    font-style: italic;
+}
+/*combination selector*/
+   header h2, main h2 {
+    color: #dd3409d0;
+   }
+
+/*A relational selector*/
+main p{
+    font-size: 95%;
+    line-height: 1em;
+}
+
+/*An attribute OR pseudo-class OR a pseudo-element*/
+a:hover, a:focus, a:link {
+    color: #f87409cc;
+}

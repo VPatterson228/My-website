@@ -26,3 +26,15 @@ html{
   border-right: 2px solid white;
 }
 #nav_menu ul a.lastitem {border-right: none;}
+main h2{
+    column-span: all;
+}
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule-style: dashed;
+}

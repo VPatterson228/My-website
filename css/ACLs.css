@@ -16,7 +16,11 @@ nav {
     margin-bottom: 60px;
 }
 #nav_menu{
-    padding: 1em;
+    /*position: absolute;
+    bottom:0; alighns bottom*/
+    padding-top: 1em;
+    margin: auto;
+    width: 100%;
     
 }
 #nav_menu ul {
@@ -45,5 +49,6 @@ nav {
     margin-right: auto;
     width: 50%;
     border: .5em black solid; 
+    min-width: 300px;
     
  }  

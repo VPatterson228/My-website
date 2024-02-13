@@ -1,72 +1,99 @@
-:root{
+:root {
     font-family: 'Courier New', Courier, monospace;
-}
-html{
-    background-image: linear-gradient(
-        to bottom, white 0%, lightblue 100% );
-   
+    /*background-image: linear-gradient(
+        to bottom, white 0%, lightblue 100% );*/
 }
 
-h1{
-    clear: left;
-    font-size: 4em;
+html {
+    background-image: linear-gradient(to bottom, white 0%, lightblue 100%);
+
+}
+
+/* header */
+
+h1 {
+    font-size: 55px;
     font-style: bolder;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: #022202;
 }
-header{
 
-background-image:url(images/sun_peeking_fog_trees.jpg);
+/*header*/
+
+header {
+    background-image: url(images/sun_peeking_fog_trees.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
+    position: relative;
 }
-#nav_menu{
-    padding: 5em;
-    
+
+/* Header Navigation Menu */
+#nav_menu {
+    position: absolute;
+    bottom: 0;
+    /* alighns bottom*/
+    margin: auto;
+    width: 100%;
 }
+
 #nav_menu ul {
     list-style-type: none;
     margin: auto;
-    width: 800px;
-    }
-#nav_menu ul li {float: left;}
-#nav_menu ul li a{
-  text-align: center;
-  display: block;
-  width: 175px;
-  height: 20px;
-  padding: 1em 0;
-  text-decoration: none;
-  background-color: #022202;
-  color: white;
-  font-weight: bold;
-  border-right: 2px solid white;
+    width: 100%;
+    padding: 0;
 }
-#nav_menu ul a.lastitem {border-right: none;}
 
-section h2{
+#nav_menu ul li {
+    float: left;
+    width: 25%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #022202;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+#nav_menu ul a.lastitem {
+    border-right: none;
+}
+
+/* main section */
+section h2 {
     clear: left;
     padding-top: 1em;
     text-align: center;
     line-height: .25;
-    
-} 
- 
-/*combination selector*/
-   header h2, main h2 {
-    color: #dd3409d0;
-   }
 
-/*A relational selector*/
-main p{
-    font-family:'Courier New', Courier, monospace
+}
+
+main p {
+    font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     line-height: 2em;
 }
 
-/*An attribute OR pseudo-class OR a pseudo-element*/
-a:hover, a:focus, a:link {
+header h2,
+main h2 {
+    color: #dd3409d0;
+}
+
+/* footer */
+a:hover,
+a:focus,
+a:link {
     color: #f87409cc;
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 25px;
+
+    }
 }

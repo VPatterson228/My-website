@@ -1,54 +1,61 @@
-:root{
-    background-image: linear-gradient(
-        to bottom, white 0%, lightblue 100% );
-    
+html {
+    background-image: linear-gradient(to bottom, white 0%, lightblue 100%);
 }
-header h1{
-    clear: left;
-    font-size: 3em;
+header {
+    background-image: url(../images/sun_peeking_fog_trees.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+h1 {
+    font-size: 55px;
     font-style: bolder;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: #022202;
-    
 }
-nav {
-    margin-bottom: 60px;
-}
-#nav_menu{
-    /*position: absolute;
-    bottom:0; alighns bottom*/
-    padding-top: 1em;
+
+/* Header Navigation Menu */
+#nav_menu {
+    position: absolute;
+    bottom: 0;
+    /* alighns bottom*/
     margin: auto;
     width: 100%;
-    
 }
 #nav_menu ul {
     list-style-type: none;
     margin: auto;
-    width: 750px;
- }
-#nav_menu ul li {float: left;}
-#nav_menu ul li a{
-  text-align: center;
-  display: block;
-  width: 175px;
-  height: 20px;
-  padding: 1em 0;
-  text-decoration: none;
-  background-color: #022202;
-  color: white;
-  font-weight: bold;
-  border-right: 2px solid white;
+    width: 100%;
+    padding: 0;
 }
-#nav_menu ul a.lastitem {border-right: none;}
 
-.center{
+#nav_menu ul li {
+    float: left;
+    width: 25%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #022202;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+#nav_menu ul a.lastitem {
+    border-right: none;
+}
+
+
+img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    border: .5em black solid; 
     min-width: 300px;
-    
+    margin-top: 20px;
  }  

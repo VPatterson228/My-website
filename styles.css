@@ -1,11 +1,7 @@
-:root {
-    font-family: 'Courier New', Courier, monospace;
-    /*background-image: linear-gradient(
-        to bottom, white 0%, lightblue 100% );*/
-}
+
 
 html {
-    background-image: linear-gradient(to bottom, white 0%, lightblue 100%);
+    background-color: rgba(173, 216, 230, .5);
 }
 
 /* header */
@@ -17,13 +13,13 @@ h1 {
     color: #022202;
 }
 
-/*header*/
+
 
 header {
     background-image: url(images/sun_peeking_fog_trees.jpg);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 200px;
     position: relative;
 }
 
@@ -64,32 +60,38 @@ header {
 }
 
 /* main section */
-img{
-    display: block;
+
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 2fr));
+    gap: 20px;
+    background-color: rgb(173, 216, 230);
+    margin-top: 20px;
+    border-radius: 45px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    max-width: 100;
+    margin: 0;
+}
+
+img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     min-width: 300px;
-    margin-top: 20px;
-    
- }  
-section h2 {
-    clear: left;
-    padding-top: 1em;
-    text-align: center;
-    line-height: .25;
-
+    border-radius: 45px;
 }
 
-main p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    line-height: 2em;
-}
-
-header h2,
 main h2 {
     color: #dd3409d0;
+    text-align: center;
 }
 
 /* footer */
@@ -99,9 +101,58 @@ a:link {
     color: #f87409cc;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 870px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        background-color: rgb(173, 216, 230);
+        border-radius: 45px;
+
+    }
+
+    img {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
     h1 {
         font-size: 25px;
 
     }
+
+    img {
+        width: 25%;
+    }
+
+    #nav_menu {
+        position: absolute;
+        bottom: 0;
+        /* alighns bottom*/
+        margin: auto;
+        width: 100%;
+    }
+
+    #nav_menu ul li {
+        float: none;
+        width: 100%;
+    }
+  #nav_menu ul li a {
+       
+        border-bottom: 2px solid white;
+    }
+
+    #nav_menu ul a.lastitem {
+        border-right: none;
+
+    }
+
 }

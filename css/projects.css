@@ -14,7 +14,7 @@ h1 {
     font-size: 55px;
     font-style: bolder;
     text-align: center;
-    color: #022202;
+    color: rgb(2, 34, 2);
 }
 
 /* Header Navigation Menu */
@@ -134,14 +134,10 @@ p {
     text-align: left;
 }
 
-.flip-box {
-    width: 50%;
-    /* Adjust width of each flip box */
-    height: 350px;
-    /* Adjust height of each flip box */
-    margin: 50px;
-    /* Adjust margin between flip boxes */
 
+
+footer{
+    clear: both;
 }
 
 @media only screen and (max-width: 800px) {
@@ -176,7 +172,13 @@ p {
     }
 
     #nav_menu ul a.lastitem {
-        border-right: none;
+        border-bottom: none;
 
     }
+    .flip-box {
+    width: 100%;
+    /* Adjust width of each flip box */
+    
+
+}
 }

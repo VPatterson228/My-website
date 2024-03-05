@@ -1,14 +1,12 @@
-
-
 html {
     background-color: rgba(173, 216, 230, .5);
-}
+   }
 
 /* header */
 
 h1 {
+    font-family: "Protest Riot", sans-serif;
     font-size: 55px;
-    font-style: bolder;
     text-align: center;
     color: #022202;
 }
@@ -123,6 +121,8 @@ a:link {
 
 }
 
+
+
 @media only screen and (max-width: 500px) {
     h1 {
         font-size: 25px;
@@ -145,8 +145,9 @@ a:link {
         float: none;
         width: 100%;
     }
-  #nav_menu ul li a {
-       
+
+    #nav_menu ul li a {
+
         border-bottom: 2px solid white;
     }
 

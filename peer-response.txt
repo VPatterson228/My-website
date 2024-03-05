@@ -1,0 +1,15 @@
+1. Firstly, your home page requires you to scroll to past an image of a beautiful trail to read about the mission of the WTA, making your page content below the fold.
+
+2.the image's width can become extremely stretched at certain resolutions and the height can become stretched at certain resolutions.
+
+3. Lastly, when your website gets small, something that could be improved upon is changing the flex-direction of your navigation bar to a column rather than a row as they become impossible to read.
+
+4.Something I noticed when looking at the projects page was the New Trail,, Puncheon and Brushing being a little off spacing. In big/normal resolution, the card looks correct. However when sizing it down to something similar to a mobile device, I noticed it overlaps with the card below it (I inserted a photo of the puncheon as an example).
+
+Response:
+
+1. I add a grid display to the sections and a flex display to the class mission. With those two thing, I was able have an image on the left and text on the right. 
+
+3. I add media queries at Max-width of 500px to switch the nav menu from horizontal to vertical. 
+
+2,4. (Projects Page) I could not figure out how to fix the text overlap so I redesigned this page to "fix" the issue. I add a 2 column and 5 row grid layout with the flip-box on the left and the text on the right.

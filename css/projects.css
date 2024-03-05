@@ -11,10 +11,10 @@ header {
 }
 
 h1 {
+     font-family: "Protest Riot", sans-serif;
     font-size: 55px;
-    font-style: bolder;
     text-align: center;
-    color: rgb(2, 34, 2);
+    color: #022202;
 }
 
 /* Header Navigation Menu */
@@ -43,7 +43,7 @@ h1 {
     display: block;
     padding: 1em 0;
     text-decoration: none;
-    background-color: #022202;
+    background-color: rgb(2, 34, 2);
     color: white;
     font-weight: bold;
     border-right: 2px solid white;
@@ -52,11 +52,66 @@ h1 {
 #nav_menu ul a.lastitem {
     border-right: none;
 }
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+    grid-template-areas:
+    "img1 txt1"
+    "img2 txt2"
+    "img3 txt3"
+    "img4 txt4"
+    "img5 txt5";
+}
+.container_1_img{
+    grid-area: img1;
+}
 
+.container_1_text{
+    grid-area: txt1;
+}
+
+.container_2_img{
+    grid-area: img2;
+}
+
+.container_2_text{
+    grid-area: txt2;
+}
+.container_3_img{
+    grid-area: img3;
+}
+
+.container_3_text{
+    grid-area: txt3;
+}
+.container_4_img{
+    grid-area: img4;
+}
+
+.container_4_text{
+    grid-area: txt4;
+}
+.container_5_img{
+    grid-area: img5;
+}
+
+.container_5_text{
+    grid-area: txt5;
+}
+
+.container_1_text,
+.container_2_text,
+.container_3_text,
+.container_4_text,
+.container_5_text{
+    padding-top: 15px;
+}
 /* Add space between flip boxes */
 .flip-box-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     /* Allow flex items to wrap onto multiple lines */
     justify-content: center;
     /* Align flex items along the center horizontally */
@@ -66,11 +121,11 @@ h1 {
 }
 
 .flip-box {
-    width: 50%;
+    width: 100%;
     /* Adjust width of each flip box */
     height: 350px;
     /* Adjust height of each flip box */
-    margin: 50px;
+    margin: 10px;
     /* Adjust margin between flip boxes */
 
 }
@@ -98,9 +153,7 @@ h1 {
     /* Safari */
     backface-visibility: hidden;
 
-    background-color: rgb(173, 216, 230);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+   
 }
 
 .flip-box-front {
@@ -109,11 +162,7 @@ h1 {
     padding: 5px;
 }
 
-.flip-box-front-img {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 5px;
-}
+
 
 .flip-box-back {
     transform: rotateY(180deg);
@@ -121,29 +170,44 @@ h1 {
 }
 
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     height: 300px;
+    
+   
 
 }
 
 h2 {
+
     text-align: center;
 }
 
 p {
+    clear: both;
     text-align: left;
+    height: 20px;
 }
 
 
 
-footer{
+footer {
     clear: both;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 1000px) {
+    img {
+        width: 500px;
+        
+    }
+}
+
+@media only screen and (max-width: 1100px) {
     img {
         width: 100%;
-        height: 100%;
+        
     }
 }
 
@@ -167,7 +231,7 @@ footer{
     }
 
     #nav_menu ul li a {
-       
+
         border-bottom: 2px solid white;
     }
 
@@ -175,10 +239,11 @@ footer{
         border-bottom: none;
 
     }
-    .flip-box {
-    width: 100%;
-    /* Adjust width of each flip box */
-    
 
-}
+    .flip-box {
+        width: 200px;
+        /* Adjust width of each flip box */
+
+
+    }
 }
